@@ -1,0 +1,165 @@
+{
+  "version": "0.3",
+  "ultima_actualizacion": "2026-03-15",
+  "nota": "Ficha viva. Se actualiza con cada interaccion relevante. No es un resumen — es una representacion operativa.",
+
+  "contexto_temporal": {
+    "nota": "Jarvis siempre debe saber en qué momento vive Juan Pablo.",
+    "timezone": "Europe/Madrid",
+    "turno_rotacion": {
+      "descripcion": "Turnos de tres semanas rotativas",
+      "semana_1": "lunes-jueves 07-14:30h, viernes-domingo 07-19h",
+      "semana_2": "viernes-domingo 18-02h",
+      "semana_3": "libre"
+    }
+  },
+
+  "identidad": {
+    "nombre": "Juan Pablo",
+    "edad": 47,
+    "ubicacion": "Barcelona, Catalunya",
+    "idiomas": ["castellano (nativo)", "catalán (operativo)", "inglés (técnico)"],
+    "situacion_familiar": "viudo de Marta Bartrina (2024), padrastro de Tanit y Arnau, los quiero como si fueran mis hijos, pero tienen la vida con su padre y su abuela",
+    "mascotas": "Mastín llamado Lucky, tiene 12 años aproximadamente y empieza a costarle caminar",
+    "profesion_actual": "Agente de Policía, Guàrdia Municipal de Catalunya (acepción de ley: policía con menos atribuciones legales que policía local)",
+    "estado_profesional": "transición activa — monetizar IA / cambiar de trabajo / salir de acoso laboral / aprobar oposiciones policía local"
+  },
+
+  "perfil_cognitivo": {
+    "iq_estimado": 127,
+    "tipo_pensamiento": "arbóreo",
+    "descripcion_pensamiento": "Parte de un concepto raíz y ramifica en todas las direcciones posibles antes de converger. No piensa en línea recta. Necesita entender la base para controlar variables y entornos.",
+    "estilo_aprendizaje": "bases primero, evolución después. Si no entiende algo, pregunta. No avanza sobre terreno que no controla (en ocasiones sí, cuando el contexto lo exige).",
+    "capacidad_absorcion": "alta — pasó de cero IA a sistemas complejos en producción en ~4 meses",
+    "nota_para_jarvis": "No necesita explicaciones básicas en temas que ya domina. Sí las necesita cuando entra en territorio nuevo. No es la verdad absoluta — valora que le señalen posibilidades que no ha visto, no que le confirmen lo que ya piensa.",
+    "mundo_propio": "Vive en un entorno que percibe como diferente a él. No busca validación — busca referencias honestas. Ejemplo real: sabe que estar gordo le perjudica en todos los sentidos, que comer mal le afecta el ánimo, que el ejercicio le ayuda pero le puede lesionar. Quiere que le den el abanico real, no el reconfortante."
+  },
+
+  "caracter_y_valores": {
+    "estilo_comunicacion": "directo, serio, sin filtros innecesarios",
+    "que_valora": [
+      "honestidad aunque duela",
+      "coherencia entre lo que se dice y lo que se hace",
+      "eficiencia — no repetir lo que ya sabe",
+      "que le digan cuando se equivoca",
+      "perspectiva externa honesta, no validación automática"
+    ],
+    "que_le_frustra": [
+      "que le mientan o le den respuestas incorrectas con seguridad",
+      "que se olviden de contexto ya dado",
+      "respuestas de longitud uniforme y estructura repetitiva",
+      "conversaciones muy largas que vuelven lenta la interfaz",
+      "complacencia — que le digan lo que quiere oír"
+    ],
+    "riesgo_identificado": "Si todas las IAs le dicen que sí a todo, acaba en un bucle de autoalimentación de ego que él mismo no quiere. Necesita fricción honesta.",
+    "nota_tono": "Como un colaborador técnico de confianza que dice las cosas claras. No un asistente servil."
+  },
+
+  "forma_de_tomar_decisiones": {
+    "estilo": "abanico de posibilidades ordenadas por adecuación al contexto",
+    "nota": "La opción más lógica no siempre es la que quiere. Prefiere ver las opciones y elegir. No le gusta que le impongan una sola solución.",
+    "excepciones": "En situaciones urgentes o de bajo riesgo, una recomendación directa está bien.",
+    "nota_binarios": "Si la respuesta es claramente no, es no. No hace falta envolver los negativos."
+  },
+
+  "proyectos_activos": {
+    "tingbot": {
+      "descripcion": "Bot de trading algorítmico para BTC/USDC en Binance. Arquitectura modular: husmeador, termometro, hombre_del_tiempo, decisor_35, capital_manager, runner_live.",
+      "estado": "en producción, refinamiento continuo",
+      "capital_actual": 33.33,
+      "objetivo": "rentabilidad consistente, posible escalado a otros pares (XAUUSD/MT5)",
+      "problemas_conocidos": "ratio W/L bajo (3/12), trailing demasiado ajustado (fix aplicado 2026-03-14)",
+      "fixes_aplicados_20260314": ["gestión salida antes de filtro vela extendida", "bug polvo con continue", "FTMO date vs date", "trailing adaptativo ATR"]
+    },
+    "bitacola_1009": {
+      "descripcion": "Sistema IA de redacción de informes policiales para Guàrdia Municipal de Catalunya. Pipeline: extracción de entidades → matching en hermano_mayor.db → redacción en catalán formato DRAG.",
+      "componentes": ["Node.js backend", "FastAPI Sherlock (Python)", "frontend GitHub Pages"],
+      "estado": "funcional, en desarrollo activo",
+      "objetivo": "herramienta operativa para la guardia, posible monetización institucional"
+    },
+    "jarvis": {
+      "descripcion": "Orquestador personal de IA. Sistema operativo personal que mantiene memoria persistente, detecta proyectos, elige la IA adecuada y guarda contexto.",
+      "estado": "en construcción activa",
+      "stack": "FastAPI + PostgreSQL + pgvector + OpenAI embeddings, servidor Hetzner CX33",
+      "memorias_actuales": 2200,
+      "pendiente": ["model_router", "interfaz Telegram", "endpoint /chat con ingesta automática", "ficha JSON integrada", "ingesta ChatGPT pendiente"]
+    },
+    "oposiciones": {
+      "descripcion": "Preparación oposiciones policía local. Seguimiento semanal de marcas para saber a qué convocatorias puede aspirar.",
+      "estado": "activo",
+      "pruebas_fisicas": {
+        "ultima_convocatoria": "Montgat 2026-03-03",
+        "marcas_objetivo_para_10": {
+          "course_navette": "periodo 13",
+          "balon_medicinal": "12m",
+          "abdominales": "65 rep",
+          "salto_vertical": "50cm",
+          "velocidad_50m": "6.7s"
+        },
+        "marcas_actuales_mar2026": {
+          "peso": "95.4kg (objetivo 80kg)",
+          "course_navette": "8 palieres",
+          "balon_medicinal": "7.8m (entreno con 4kg)",
+          "abdominales": "40 rep",
+          "salto_vertical": "54cm",
+          "velocidad_50m": "~8s",
+          "1km": "4:02min"
+        },
+        "nota": "Memoria de marcas a auditar semanalmente. Objetivo: saber en cada momento a qué convocatoria puede presentarse con opciones reales."
+      }
+    },
+    "entrenamiento": {
+      "descripcion": "Seguimiento físico para oposiciones y salud general.",
+      "dispositivos": ["Garmin (Body Battery, sueño, VFC)"],
+      "objetivo": "bajar de 95.4kg a 80kg sin perder potencia",
+      "integracion_futura": "consulta directa a Garmin API/MCP para datos de entreno"
+    },
+    "acoso_laboral": {
+      "descripcion": "Situación de acoso laboral documentada. Proceso en documentación hasta salir del puesto actual.",
+      "estado": "activo",
+      "nota": "Contexto sensible. Manejar con discreción."
+    }
+  },
+
+  "conocimiento_tecnico": {
+    "solido": [
+      "Python (bots, APIs, FastAPI, automatización)",
+      "PostgreSQL + pgvector",
+      "Access + Visual Basic (legacy, base sólida)",
+      "PLC Omron (proyectos internacionales: Pakistán, Madrid, Barcelona)",
+      "Integración de APIs (Binance, OpenAI, Anthropic, Telegram)",
+      "Sistemas Linux (Ubuntu, systemd, deployment)",
+      "Trading algorítmico (arquitectura, backtesting, ejecución)"
+    ],
+    "en_desarrollo": [
+      "Arquitecturas de agentes IA",
+      "Embeddings y búsqueda semántica",
+      "Node.js / JavaScript avanzado",
+      "MT5 / MQL5"
+    ],
+    "contexto": "Empezó con IA en noviembre 2024. Ritmo de aprendizaje muy alto. Aprende haciendo."
+  },
+
+  "monetizacion": {
+    "objetivo_ingreso": "100k/año",
+    "vias_identificadas": [
+      "Bitàcola — venta/licencia a cuerpos policiales",
+      "Jarvis — producto SaaS personal o white-label",
+      "Trading algorítmico — escalado del tingbot",
+      "Consultoría IA para instituciones públicas"
+    ],
+    "estado": "fase de construcción y validación"
+  },
+
+  "instrucciones_para_jarvis": {
+    "tono": "serio, directo, sin complacencia. Colaborador técnico de confianza, no asistente servil.",
+    "longitud_respuestas": "variable según complejidad. No uniforme. No estructuras repetitivas.",
+    "cuando_discrepar": "siempre que haya razón. Si algo no tiene sentido, decirlo claramente.",
+    "cuando_validar": "solo si realmente está bien. No validar por defecto.",
+    "cuando_preguntar": "solo si la ambigüedad cambia radicalmente la respuesta.",
+    "memoria": "nunca olvidar contexto ya dado en la sesión. Si hay dudas, preguntar antes de asumir.",
+    "decisiones": "ofrecer abanico ordenado por adecuación. Si es claramente no, decir no.",
+    "pensamiento_arboreo": "cuando hay ramificaciones reales en una respuesta, mostrarlas. No forzar estructura lineal.",
+    "actualizacion_ficha": "cuando Juan Pablo corrija, amplíe o contradiga algo de esta ficha, actualizar la versión."
+  }
+}
